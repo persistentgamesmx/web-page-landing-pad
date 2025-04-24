@@ -8,6 +8,7 @@
   right: 0;
   bottom: 0;
   z-index: 1; /* Lower z-index than navbar */
+  font-family: Consolas, monospace;
 }
 
 .section {
@@ -32,6 +33,7 @@
   font-size: 3.5rem; /* Larger size for main title */
   margin-bottom: 1rem;
   font-weight: bold;
+  font-family: Consolas, monospace;
 }
 
 .subtitle {
@@ -39,6 +41,7 @@
   margin-bottom: 2rem;
   color: #666; /* Optional: different color for subtitle */
   font-weight: 500;
+  font-family: Consolas, monospace;
 }
 
 /* Make it responsive */
@@ -81,11 +84,13 @@
 /* Make sure the content is readable */
 h1, h2, h3 {
   margin-bottom: 1.5rem;
+  font-family: Consolas, monospace;
 }
 
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
+  font-family: Consolas, monospace;
 }
 
 /* Optional: Add smooth transitions between sections */
@@ -122,5 +127,23 @@ p {
   .project {
     width: 100%;
     margin-bottom: 1rem;
+  }
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
