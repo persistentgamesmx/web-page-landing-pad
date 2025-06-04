@@ -1,13 +1,11 @@
 <nav class="navbar">
-  <div class="nav-brand">
-  </div>
   <ul class="nav-menu">
-    <li><a href="#splashscreen" (click)="scrollToSection($event, 'splashscreen')" [class.active]="activeSection === 'splashscreen'">Home</a></li>
-    <li><a href="#description" (click)="scrollToSection($event, 'description')" [class.active]="activeSection === 'description'">Description</a></li>
-    <li><a href="#the-works" (click)="scrollToSection($event, 'the-works')" [class.active]="activeSection === 'the-works'">The Works</a></li>
-    <li><a href="#game-engine" (click)="scrollToSection($event, 'game-engine')" [class.active]="activeSection === 'game-engine'">Game Engine</a></li>
-    <li><a href="#future-projects" (click)="scrollToSection($event, 'future-projects')" [class.active]="activeSection === 'future-projects'">Future Projects</a></li>
-    <li><a href="#contact" (click)="scrollToSection($event, 'contact')" [class.active]="activeSection === 'contact'">Contact</a></li>
+    <li><a href="#splashscreen" [class.active]="activeSection === 'splashscreen'">Home</a></li>
+    <li><a href="#description" [class.active]="activeSection === 'description'">Description</a></li>
+    <li><a href="#the-works" [class.active]="activeSection === 'the-works'">The Works</a></li>
+    <li><a href="#game-engine" [class.active]="activeSection === 'game-engine'">Game Engine</a></li>
+    <li><a href="#future-projects" [class.active]="activeSection === 'future-projects'">Future Projects</a></li>
+    <li><a href="#contact" [class.active]="activeSection === 'contact'">Contact</a></li>
   </ul>
 </nav>
 

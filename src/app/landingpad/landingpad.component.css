@@ -9,33 +9,22 @@
   bottom: 0;
   z-index: 0;
   font-family: Consolas, monospace;
+  scroll-behavior: smooth;
 }
 
 .landing-content::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
   
-  background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgb(216, 247, 255) 60%, rgba(70, 216, 252, 1) 100%);
+  background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, #7dd4e3 60%, #1eb4cf 80%);
   pointer-events: none;
   z-index: -1;
-  animation: wave 8s ease-in-out infinite;
 }
 
-@keyframes wave {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 .section {
   height: 100vh;
@@ -48,6 +37,7 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  scroll-snap-stop: always;
 }
 
 .section-content {
@@ -81,32 +71,6 @@
   .subtitle {
     font-size: 1.2rem;
   }
-}
-
-/* Optional: Add different background colors for each section */
-/*
-#splashscreen {
-  background-color: rgba(105, 208, 255, 0.5);
-}
-
-#description {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-#the-works {
-  background-color: rgba(248, 249, 250, 0.7);
-}
-
-#game-engine {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-#future-projects {
-  background-color: rgba(21, 136, 250, 0.7);
-}
-
-#contact {
-  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Add some spacing for the fixed navbar */

@@ -7,8 +7,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Ensure navbar is above the landing content */
 }
 
@@ -28,7 +26,7 @@
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-weight: 500;
   font-family: Consolas, monospace;
   transition: all 0.3s ease;
@@ -38,24 +36,6 @@
 
 .navbar a:hover {
   color: #007bff;
-}
-
-.navbar a.active,
-.navbar a:active {
-  color: #007bff;
-}
-
-.navbar a.active::after,
-.navbar a:active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #007bff;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
 }
 
 .navbar a::after {
@@ -70,7 +50,8 @@
   transition: transform 0.3s ease;
 }
 
-.navbar a:hover::after {
+.navbar a:hover::after,
+.navbar a.hover::after {
   transform: scaleX(1);
 }
 

@@ -11,15 +11,6 @@ export class AppComponent {
   title = 'startup-landing-pad';
   activeSection: string = 'splashscreen';
 
-  scrollToSection(event: Event, sectionId: string) {
-    event.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      this.activeSection = sectionId;
-    }
-  }
-
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     const sections = ['splashscreen', 'description', 'the-works', 'game-engine', 'future-projects', 'contact'];
